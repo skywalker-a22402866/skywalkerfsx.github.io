@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/cidade/index.html?serverWindowId=d81744ed-3c3b-4033-b880-80ccce4a39a9",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/cidade/index.html?serverWindowId=d81744ed-3c3b-4033-b880-80ccce4a39a9"
+        }
+    ]
+}
