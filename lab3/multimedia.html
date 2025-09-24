@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Palmela</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <style>
+            .fotografias {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .fotografias img{
+                width: 150px;
+                border-radius: 20px;
+            }
+            .poesia {
+                :nth-child(1){
+                    color: blue;
+                }
+                :nth-child(2n){
+                    color: grey
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Vila de Palmela</h1>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="local.html">Localizacao</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="info.html">Informação</a>
+        </nav>
+        <main>
+            <h2>Multimedia</h2>
+            <p>Nesta página encontra conteudos multimédia.</p>
+            <p>
+                <a href="#fotografias">Fotografias</a>
+                <a href="#video">Video</a>
+                <a href="#poema">Poema</a>
+            </p>
+            <section id="fotografias">
+                <h3>Fotografias</h3>
+                <div class="fotografias">
+                    <img src="/images/1x1.jpg" alt="Vista do Castelo">
+                    <img src="/images/1x2.jpg" alt="Vista Igreija Matriz">
+                    <img src="/images/1x3.jpg" alt="Vista Paços do Concelho.">
+                    <img src="/images/1x4.jpg" alt="Vista das Caves de vinho">
+                    <img src="/images/1x5.jpg" alt="Vista do Teatro">
+                    <img src="/images/1x6.jpg" alt="Vista do Coreto">
+                    <img src="/images/1x7.jpg" alt="Vista do Pelourinho">
+                    <img src="/images/1x8.jpg" alt="Vista da vila em flor">
+                </div>
+            </section>
+            <section id="video">
+                <h3>Video</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yS0DLaQwVb4?si=xalzN5RYj9VJQ5Ud" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+            <section id="poema">
+                <div class="poesia">
+                    <h3>Poesia</h3>
+                    <h4> Palmela, entre o Céu e a Serra</h4>
+                    <p>No alto se ergue, firme e bela,</p>
+                    <p>A sentinela — velha Palmela.</p>
+                    <p>Castelo de pedra, guardião da história,</p>
+                    <p>Ecoa nos vales sua antiga glória.</p>             
+                    <p>Vinhedos dançam sob o sol dourado,</p>
+                    <p>Em cada bago, um fado guardado.</p>
+                    <p>Do Moscatel, o néctar sagrado,</p>
+                    <p>Que beija a alma e deixa o corpo encantado.</p>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <p>DIW 2025</p>
+        </footer>
+    </body>
+</html>
