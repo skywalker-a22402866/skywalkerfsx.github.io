@@ -18,3 +18,10 @@ footer{
     padding: 10pt;
     text-align: center
 }
+
+@media (max-width: 600px) {
+  header, nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
