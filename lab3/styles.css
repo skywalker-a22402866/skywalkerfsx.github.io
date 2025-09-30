@@ -21,12 +21,10 @@ footer{
     padding: 10pt;
     text-align: center
 }
-
-.fotoGrande {
-  width: 100%;
-  
+.container{
+  position: relative;
 }
-.frase{
+.texto{
     position: absolute;
     color: white;
     font-weight: bold;
@@ -40,11 +38,19 @@ footer{
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
+  transition:widht 2s;
   }
+
 .fotografias img{
-  width: 150px;
+    width: 150px;
+    height: 150px;
   border-radius: 20px;
 }
+
+.fotografias:hover{
+  :hover{ width: 300px; height: 300px}
+}
+
 .poesia {
     :nth-child(1){
       color: blue;
