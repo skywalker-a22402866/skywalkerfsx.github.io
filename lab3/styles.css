@@ -5,7 +5,7 @@ header{
     text-align: center;
 }
 nav a{
-    font-size:xx-large;
+    font-size:large;
     position: relative;
     padding: 10pt;
     text-align: center;
@@ -29,7 +29,7 @@ footer{
     color: white;
     font-weight: bold;
     top: 10px;
-    left:10px;
+    left:100x;
 }
 
 
