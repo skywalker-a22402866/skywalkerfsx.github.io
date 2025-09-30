@@ -50,8 +50,13 @@ nav a{
     padding: 10px 20px;
 }
 
+.texto{
+    display: flex;
+    flex-direction: row;
+}
+
 @media (max-width: 600px) {
-  header, nav{
+  header, nav, .texto{
     flex-direction: column;
   }
 }
