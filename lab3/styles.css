@@ -4,11 +4,14 @@ header{
     padding: 10pt;
     text-align: center;
 }
-nav{
-    background-color: rgba(146, 141, 141, 0.473);
+nav a{
+    \background-color: rgba(146, 141, 141, 0.473);
+    position: relative;
     padding: 10pt;
-    text-align: center
+    text-align: center;
+    text-decoration: none;
 }
+
 main {
     background-color: rgb(233, 250, 157) ;
 }
@@ -17,6 +20,38 @@ footer{
     color :white;
     padding: 10pt;
     text-align: center
+}
+
+.fotoGrande {
+  width: 100%;
+  
+}
+.frase{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    top: 10px;
+    left:10px;
+}
+
+
+.fotografias {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  }
+.fotografias img{
+  width: 150px;
+  border-radius: 20px;
+}
+.poesia {
+    :nth-child(1){
+      color: blue;
+                }
+    :nth-child(2n){
+      color: grey
+                }
 }
 
 @media (max-width: 600px) {
