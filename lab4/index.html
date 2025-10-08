@@ -1,19 +1,40 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeira Página</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/lab4/css/styles.css" />
 </head>
+
 <body>
     <header>
-
+        <h1>Teste JavaScript</h1>
     </header>
     <main>
-
+        <div id="texto">
+            <h4> ### </h4>
+        </div>
+        <button onclick="saudar()">
+            Clique aqui
+        </button>
+        <div>
+            <button id="botao2" onmouseover="colorir()">
+                Passa aqui...
+            </button>
+        </div>
+        <div>
+            <button ondblclick ="dblclick()">
+                Clica-me 2x...
+            </button>
+            <div id="conta">
+              0
+            </div>
+        </div>
     </main>
     <footer>
-        
+
     </footer>
+    <script src="scripts/main.js"></script>
 </body>

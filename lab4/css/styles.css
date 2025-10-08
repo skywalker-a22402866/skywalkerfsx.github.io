@@ -1,0 +1,32 @@
+body {
+    background-color: #b3b3b3
+}
+
+header {
+    background-color: rgb(22, 146, 22);
+    color: white;
+    padding: 10pt;
+    text-align: center;
+}
+
+
+main {
+    background-color: aliceblue;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 5px;
+}
+
+#texto {
+    padding: 100px;
+    margin: 5px;
+}
+
+#conta {
+    padding: 100px;
+    margin: 5px;
+}
