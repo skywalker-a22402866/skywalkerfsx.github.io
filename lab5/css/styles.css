@@ -1,0 +1,31 @@
+body {
+    background-color:burlywood;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+div {
+    display: flex;
+
+}
+
+#texto {
+    padding: 100px;
+    margin: 5px;
+}
+
+#conta {
+    margin: 5px;
+}
+
+#id2 {
+    display: flex;
+}
+
+#contagem {
+    display: flex;
+}
