@@ -1,5 +1,14 @@
 #produtos {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap:20px;
+}
+#carrinho {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:20px;
+    
+  
 }
