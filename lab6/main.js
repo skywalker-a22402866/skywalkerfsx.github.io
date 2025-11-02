@@ -3,10 +3,12 @@ const section = document.querySelector('#produtos');
 const basket = document.querySelector('#carrinho');
 const totalCarrinho = document.getElementById('total');
 
+
 addEventListener("DOMContentLoaded", (event) => { 
     carregarProdutos(produtos);
     atualizarCarrinho(produtos);
 })
+
 
 function carregarProdutos(produtos){
     produtos.forEach(produto => {
@@ -19,7 +21,6 @@ function carregarProdutos(produtos){
 
 function atualizarCarrinho(produtos){
     const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-    const ul = document.getElementById('carrinho');
     //console.log('Produtos no carrinho:', carrinho);
     //localStorage.setItem('carrinho', JSON.stringify(carrinho));
     ul.innerHTML = '';
