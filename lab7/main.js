@@ -4,7 +4,7 @@ const basket = document.querySelector('#carrinho');
 const totalCarrinho = document.getElementById('total');
 const select = document.getElementById('select-categoria');
 
-let categorias_selected="";
+let categorias_selected="Todas as categorias";
 
 document.addEventListener('DOMContentLoaded', function() {
   fetch('https://deisishop.pythonanywhere.com/products/')
@@ -116,31 +116,55 @@ function atualizarCarrinho(produtos){
 }
 
 function criarProduto(produto){
-    
-        if (produto.category==categorias_selected){    
-        const artigo = document.createElement('article')
-        //artigo.textContent = produto.title;
+        if (categorias_selected!="" && produto.category==categorias_selected){      
+          const artigo = document.createElement('article')
+          //artigo.textContent = produto.title;
 
-        //artigo.textContent= produto.category
+          //artigo.textContent= produto.category
 
-        const imagem = document.createElement('img');
-        imagem.src = produto.image;     // a imagem do produto
-        imagem.alt = produto.title;     // texto alternativo
-        imagem.style.width = "150px";   // opcional: define tamanho
+          const imagem = document.createElement('img');
+          imagem.src = produto.image;     // a imagem do produto
+          imagem.alt = produto.title;     // texto alternativo
+          imagem.style.width = "150px";   // opcional: define tamanho
     
     
-        const titulo = document.createElement('h3');
-        titulo.textContent = produto.title;
+          const titulo = document.createElement('h3');
+          titulo.textContent = produto.title;
     
-        const preco = document.createElement('p');
-        preco.textContent = `Preço: €${produto.price.toFixed(2)}`;
-        // Botão de adicionar ao carrinho
-        const botaoAdicionar = document.createElement('button');
-        botaoAdicionar.textContent = '+ Adicionar ao carrinho';
-        botaoAdicionar.addEventListener('click', () => adicionarAoCarrinho(produto));
+          const preco = document.createElement('p');
+          preco.textContent = `Preço: €${produto.price.toFixed(2)}`;
+          // Botão de adicionar ao carrinho
+          const botaoAdicionar = document.createElement('button');
+          botaoAdicionar.textContent = '+ Adicionar ao carrinho';
+          botaoAdicionar.addEventListener('click', () => adicionarAoCarrinho(produto));
     
-        artigo.append(imagem, titulo, preco, botaoAdicionar);
-        section.append(artigo); 
+          artigo.append(imagem, titulo, preco, botaoAdicionar);
+          section.append(artigo); 
+        }
+        else if (categorias_selected=="Todas as categorias"){
+          const artigo = document.createElement('article')
+          //artigo.textContent = produto.title;
+
+          //artigo.textContent= produto.category
+
+          const imagem = document.createElement('img');
+          imagem.src = produto.image;     // a imagem do produto
+          imagem.alt = produto.title;     // texto alternativo
+          imagem.style.width = "150px";   // opcional: define tamanho
+    
+    
+          const titulo = document.createElement('h3');
+          titulo.textContent = produto.title;
+    
+          const preco = document.createElement('p');
+          preco.textContent = `Preço: €${produto.price.toFixed(2)}`;
+          // Botão de adicionar ao carrinho
+          const botaoAdicionar = document.createElement('button');
+          botaoAdicionar.textContent = '+ Adicionar ao carrinho';
+          botaoAdicionar.addEventListener('click', () => adicionarAoCarrinho(produto));
+    
+          artigo.append(imagem, titulo, preco, botaoAdicionar);
+          section.append(artigo); 
         }
     
 }
